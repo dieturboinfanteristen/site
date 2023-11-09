@@ -43,7 +43,7 @@
                     <i class='bx bx-sun sun'></i>
                 </div>
                         <!-- Hier ist der Login-Button -->
-                        <button href="src/Login/" id="loginButton">Login</button>
+                        <button class="login-button" id="loginButton">Login</button>
                     </div>
                 </div>
             </div>
@@ -108,6 +108,10 @@ body.addEventListener("click", (e) => {
     }
 });
 
+document.getElementById("loginButton").addEventListener("click", function() {
+        // Hier setzt du die URL ein, zu der du weiterleiten möchtest
+        window.location.href = "src/Login/";
+    });
     </script>
 </body>
 </html>
