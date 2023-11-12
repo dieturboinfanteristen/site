@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const sidebarClose = document.querySelector(".sidebarClose");
     const menu = document.querySelector(".menu");
 
-    // Initialisiere die AuthManager-Instanz
-    const authManager = new AuthManager();
+    // Initialisiere die AuthManager-Instanz global
+    window.authManager = new AuthManager();
     authManager.updateLoginStatus();
 
     modeToggle.addEventListener("click", () => {
@@ -44,10 +44,10 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = "index.html";
     });
 
+    // Füge einen Event-Listener für den Login-Button hinzu
     document.getElementById("loginButton").addEventListener("click", function () {
-        authManager.login();
         // Hier weiterleiten zur Login-Seite
-        window.location.href = "Login.html";
+        window.location.href = "login.html";
     });
 });
 
