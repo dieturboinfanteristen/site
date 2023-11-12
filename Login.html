@@ -3,17 +3,17 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="assets/js/login.js"></script>
+   <script src="Login/js/login.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
-   <link rel="stylesheet" href="assets/css/styles.css">
+   <link rel="stylesheet" href="Login/css/styles.css">
 
    <title>Login form </title>
 </head>
 <body>
    <div class="login">
-      <img src="assets/img/login-bg.png" alt="image" class="login__bg">
+      <img src="Login/img/login-bg.png" alt="image" class="login__bg">
 
-      <form action="" class="login__form">
+      <form class="login__form" id="loginForm">
          <h1 class="login__title">Login</h1>
 
          <div class="login__inputs">
@@ -31,15 +31,12 @@
          <div class="login__check">
             <div class="login__check-box">
             </div>
-
          </div>
 
-         <button type="button" class="login__button" >Login</button>
-
-         <div class="login__register"> Sie haben noch kein Konto? <a href="/site/src/Registrieren">Registrieren</a>
-         </div>
+         <button type="submit" class="login__button">Login</button>
          <div id="error-message" class="error-message"></div>
       </form>
+      <script src="Login/js/login.js"></script>
    </div>
 </body>
 </html>

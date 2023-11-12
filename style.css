@@ -166,6 +166,21 @@ body.dark .search-field i {
     background-color: #0056b3; /* Hintergrundfarbe des Buttons beim Hover-Zustand */
 }
 
+.logout-button {
+    background-color: #007BFF; /* Hintergrundfarbe des Buttons */
+    color: #fff; /* Textfarbe des Buttons */
+    padding: 10px 20px; /* Innenabstand des Buttons */
+    border: none; /* Keine Randlinie */
+    border-radius: 30px; /* Abrundung der Ecken */
+    cursor: pointer; /* Zeige Handcursor beim Überfahren */
+    font-size: 16px; /* Schriftgröße */
+    transition: background-color 0.3s ease; /* Sanfte Übergangsfarbe */
+}
+
+.logout-button:hover {
+    background-color: #0056b3; /* Hintergrundfarbe des Buttons beim Hover-Zustand */
+}
+
 @media (max-width: 790px) {
     nav .nav-bar .sidebarOpen {
         display: block;
