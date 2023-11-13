@@ -33,42 +33,36 @@
                 </div>
             </div>
 
-            <button type="submit" class="login__button">Login</button>
+            <button type="submit" class="login__button" id="loginButton">Login</button>
             <div id="error-message" class="error-message"></div>
         </form>
 
         <script>
             // Lese den Anmeldestatus aus dem Local Storage
-    const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
-    const loginForm = document.getElementById("loginForm");
-    const loginButton = document.querySelector(".login__button");
-    const errorMessage = document.getElementById("error-message");
+            const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+            const loginForm = document.getElementById("loginForm");
+            const loginButton = document.getElementById("loginButton");
+            const errorMessage = document.getElementById("error-message");
 
-    // Verstecke oder zeige den Logout-Button basierend auf dem Anmeldestatus
-    if (isLoggedIn) {
-        loginButton.style.display = "none";
-    } else {
-        loginButton.style.display = "block";
-    }
+            // Verstecke oder zeige den Logout-Button basierend auf dem Anmeldestatus
+            if (isLoggedIn) {
+                loginButton.textContent = "Logout"; // Change the button text or use innerHTML for more complex changes
+            }
 
-    // Setze den Anmeldestatus beim Laden der Seite
-    loginForm.addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent the default form submission
+            // Setze den Anmeldestatus beim Laden der Seite
+            loginForm.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent the default form submission
 
-        // Hier sollte die Logik für die Überprüfung der Anmeldedaten stattfinden
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
+                // Simulate a successful login
+                localStorage.setItem("isLoggedIn", "true");
+                loginButton.textContent = "Logout";
+            });
 
-        // Beispiel: Überprüfe, ob die Anmeldedaten korrekt sind
-        if (email === "example@example.com" && password === "pass123") {
-            localStorage.setItem("isLoggedIn", "true");
-            loginButton.style.display = "none";
-            errorMessage.innerHTML = ""; // Clear any previous error message
-        } else {
-            // Zeige eine Fehlermeldung
-            errorMessage.innerHTML = "Incorrect email or password. Please try again.";
-        }
-    });
+            // Falls benötigt: Eventlistener für den Logout-Button
+            loginButton.addEventListener("click", function () {
+                localStorage.setItem("isLoggedIn", "false");
+                loginButton.textContent = "Login"; // Change back to "Login" after logout
+            });
         </script>
     </div>
 </body>
