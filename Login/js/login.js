@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.setItem("loggedInEmail", email);
 
       // Pfade für die Weiterleitung sollten in einer produktiven Umgebung angepasst werden.
-      window.location.href = "/C:/Users/Max/Desktop/web/index.html";  // Passe den Pfad entsprechend deiner Ordnerstruktur an.
+      window.location.href = "index.html";  // Passe den Pfad entsprechend deiner Ordnerstruktur an.
     } else {
       const errorMessage = document.getElementById("error-message");
       errorMessage.textContent = "Anmeldung fehlgeschlagen. Überprüfe deine E-Mail-Adresse und dein Passwort.";
