@@ -26,7 +26,7 @@ body {
 
 body.dark {
     --body-color: #18191A;
-    --nav-color:rgba( 0, 0, 0, 0.25 );
+    --nav-color: rgba(0, 0, 0, 0.25);
     --side-nav: #242526;
     --text-color: #CCC;
     --search-bar: #242526;
@@ -43,7 +43,6 @@ nav {
     border: 1px solid #393838;
 }
 
-
 nav .nav-bar {
     position: relative;
     height: 100%;
@@ -55,7 +54,6 @@ nav .nav-bar {
     align-items: center;
     justify-content: space-between;
 }
-
 
 nav .nav-bar .sidebarOpen {
     color: var(--text-color);
@@ -144,7 +142,7 @@ nav .nav-bar .logo a {
     opacity: 0;
     pointer-events: none;
     margin-left: -25px;
-    display: none; 
+    display: none;
 }
 
 body.dark .search-field i {
@@ -152,33 +150,33 @@ body.dark .search-field i {
 }
 
 .login-button {
-    background-color: #007BFF; /* Hintergrundfarbe des Buttons */
-    color: #fff; /* Textfarbe des Buttons */
-    padding: 10px 20px; /* Innenabstand des Buttons */
-    border: none; /* Keine Randlinie */
-    border-radius: 30px; /* Abrundung der Ecken */
-    cursor: pointer; /* Zeige Handcursor beim Überfahren */
-    font-size: 16px; /* Schriftgröße */
-    transition: background-color 0.3s ease; /* Sanfte Übergangsfarbe */
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .login-button:hover {
-    background-color: #0056b3; /* Hintergrundfarbe des Buttons beim Hover-Zustand */
+    background-color: #0056b3;
 }
 
 .logout-button {
-    background-color: #007BFF; /* Hintergrundfarbe des Buttons */
-    color: #fff; /* Textfarbe des Buttons */
-    padding: 10px 20px; /* Innenabstand des Buttons */
-    border: none; /* Keine Randlinie */
-    border-radius: 30px; /* Abrundung der Ecken */
-    cursor: pointer; /* Zeige Handcursor beim Überfahren */
-    font-size: 16px; /* Schriftgröße */
-    transition: background-color 0.3s ease; /* Sanfte Übergangsfarbe */
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .logout-button:hover {
-    background-color: #0056b3; /* Hintergrundfarbe des Buttons beim Hover-Zustand */
+    background-color: #0056b3;
 }
 
 @media (max-width: 790px) {
@@ -231,20 +229,72 @@ body.dark .search-field i {
         margin-top: 20px;
     }
 
-    /* Add margin to the text to create spacing */
     .dark-light i.sun,
     .searchToggle i.cancel {
         margin-left: 20px;
     }
-    
-    /* Add margin to the text to create spacing */
+
     .dark-light.active i.moon {
-        margin-right: 20px; /* Add margin on the right side of the moon icon */
+        margin-right: 20px;
+    }
+
+    body.dark .search-field i {
+        margin-left: 30px;
+    }
+
+
+    .user-account {
+        position: relative;
+        border-radius: 5px;
     }
     
-    /* Add margin to the text to create spacing */
-    body.dark .search-field i {
-        margin-left: 30px; /* Add margin on the left side of the sun icon */
+    .user-menu {
+        display: none;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        background-color: #fff;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 5px;
+    }
+    
+    .user-menu li {
+        padding: 10px;
+        text-align: center;
+        list-style: none;
+        border-radius: 5px;
+    }
+    
+    .user-menu li a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .user-menu li:hover {
+        background-color: #f2f2f2;
+        border-radius: 5px;
+    }
+    
+    .user-button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        text-decoration: none;
+        color: #000;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .user-button:hover {
+        background-color: #f2f2f2;
+        border-radius: 5px;
+    }
+    
+    /* Show the dropdown menu when user hovers over the user account button */
+    .user-account:hover .user-menu {
+        display: block;
+        border-radius: 5px;
     }
 }
-

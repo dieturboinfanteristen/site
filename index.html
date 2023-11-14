@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
-
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
     <link rel="stylesheet" href="style.css">
-
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Start</title>
 </head>
@@ -41,13 +39,23 @@
                 </div>
 
                 <button class="login-button" id="loginButton">Login</button>
-                
                 <button style="display: none;" class="logout-button" id="logoutButton">Logout</button>
+
+                <!-- User Account Dropdown Menu -->
+                <div class="user-account">
+                    <span class="user-button" id="profileButton">
+                        <i class='bx bxs-user'></i><span>Nutzername</span>
+                    </span>
+                    <ul class="user-menu">
+                        <li><a href="#"><i class='bx bx-user'></i> My Account</a></li>
+                        <li><a href="#"><i class='bx bx-cog'></i> Settings</a></li>
+                        <li><a href="#" id="logoutButton"><i class='bx bx-log-out'></i> Logout</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
 
     <script src="script.js"></script>
-</body>
 </body>
 </html>
