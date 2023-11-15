@@ -1,61 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
 
-    <title>Start</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+
+  <title>Start</title>
 </head>
+
 <body>
-    <nav>
-        <div class="nav-bar">
-            <i class='bx bx-menu sidebarOpen'></i>
-            <span class="logo navLogo"><a href="#">CodingLab</a></span>
+  <nav>
+    <div class="nav-bar">
+      <i class='bx bx-menu sidebarOpen'></i>
+      <span class="logo navLogo"><a href="#">CodingLab</a></span>
 
-            <div class="menu">
-                <div class="logo-toggle">
-                    <span class="logo"><a href="#">CodingLab</a></span>
-                    <i class='bx bx-x sidebarClose'></i>
-                </div>
-
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="darkLight-searchBox">
-                <div class="dark-light">
-                    <i class='bx bx-moon moon'></i>
-                    <i class='bx bx-sun sun'></i>
-                </div>
-
-                <button class="login-button" id="loginButton">Login</button>
-                <button style="display: none;" class="logout-button" id="logoutButton">Logout</button>
-
-                <!-- User Account Dropdown Menu -->
-                <div class="user-account">
-                    <span class="user-button" id="profileButton">
-                        <i class='bx bxs-user'></i><span>Nutzername</span>
-                    </span>
-                    <ul class="user-menu">
-                        <li><a href="#"><i class='bx bx-user'></i> My Account</a></li>
-                        <li><a href="#"><i class='bx bx-cog'></i> Settings</a></li>
-                        <li><a href="#" id="logoutButton"><i class='bx bx-log-out'></i> Logout</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="menu">
+        <div class="logo-toggle">
+          <span class="logo"><a href="#">CodingLab</a></span>
+          <i class='bx bx-x sidebarClose'></i>
         </div>
-    </nav>
 
-    <script src="script.js"></script>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="darkLight-searchBox">
+        <div class="dark-light">
+          <i class='bx bx-moon moon'></i>
+          <i class='bx bx-sun sun'></i>
+        </div>
+
+        <button class="login-button" id="loginButton">Login</button>
+
+        <button style="display: none;" class="logout-button" id="logoutButton">Logout</button>
+
+      </div>
+
+      <!-- Profilbild-Element -->
+      <ul id="profileList" style="display: none;">
+        <li>
+          <img src="profile.png" class="profile" style="max-width: 40px; max-height: 40px;" />
+      <ul id="navItems" style="display: none;">
+        <li class="sub-item">
+          <span class="material-icons-outlined"> grid_view </span>
+          <p>Dashboard</p>
+        </li>
+        <li class="sub-item">
+          <span class="material-icons-outlined"> format_list_bulleted </span>
+          <p>My Orders</p>
+        </li>
+        <li class="sub-item">
+          <span class="material-icons-outlined"> manage_accounts </span>
+          <p>Update Profile</p>
+        </li>
+        <li class="sub-item">
+          <span class="material-icons-outlined"> logout </span>
+          <p>Logout</p>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <script src="script.js"></script>
 </body>
+
 </html>
