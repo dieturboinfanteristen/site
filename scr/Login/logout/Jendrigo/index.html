@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nav</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="hero">
         <nav>
@@ -16,50 +18,63 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <img src="images/user.png" class="user-pic" onclick="toggleMenu()">
+            <img src="images/user.png" class="user-pic" alt="Profile Image" id="profile-image" onclick="toggleMenu()">
 
             <div class="sub-meu-wrap" id="subMenu">
-            <div class="sub-meu">
-                <div class="user-info">
-                    <img src="images/user.png">
-                    <h2>Jendrigo</h2>
-                </div>
-                <hr>
+                <div class="sub-meu">
+                    <div class="user-info">
+                        <img src="https://media.istockphoto.com/id/1337144146/de/vektor/standard-avatar-profilsymbolvektor.jpg?s=612x612&w=0&k=20&c=rw3jpsQAdTti6Hh9SAGN15Ex8HYYwmHv3JFHS6KStMo=">
+                        <h2 id="username-display">Max</h2>
+                    </div>
+                    <hr>
 
-                <a href="#" class="sub-menu-link">
-                    <img src="images/profile.png">
-                    <p>Edit Profile</p>
-                    <span>></span>
-                </a>
-                <a href="#" class="sub-menu-link">
-                    <img src="images/setting.png">
-                    <p>settings & Privacy</p>
-                    <span>></span>
-                </a>
-                <a href="#" class="sub-menu-link">
-                    <img src="images/help.png">
-                    <p>Help & Support</p>
-                    <span>></span>
-                </a>
-                <a href="/" class="sub-menu-link">
-                    <img src="images/logout.png">
-                    <p>Logout</p>
-                    <span>></span>
-                </a>
-             </div>
+                    <a href="profil.html" class="sub-menu-link">
+                        <img src="images/profile.png">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="/" class="sub-menu-link">
+                        <img src="images/logout.png">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
             </div>
 
         </nav>
 
-
-
+        <!-- Your existing script for toggleMenu() -->
         <script>
-            let  subMenu = document.getElementById("subMenu");
+            let subMenu = document.getElementById("subMenu");
 
             function toggleMenu() {
                 subMenu.classList.toggle("open-menu");
             }
         </script>
+
+        <!-- Script to update user information from localStorage -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script>
+            // Function to update user information on the page
+            function updateUserInfoOnPage() {
+                var userInfo = JSON.parse(localStorage.getItem('userInfo')) || {};
+                $('#profile-image').attr('src', userInfo.profileImage || 'default-image.jpg');
+                $('#username-display').text(userInfo.username || 'User');
+                // Update other elements as needed
+            }
+
+            // Listen for the storage event to update user information
+            window.addEventListener('storage', function (event) {
+                if (event.key === 'userInfo') {
+                    // Update the user information on the page
+                    updateUserInfoOnPage();
+                }
+            });
+
+            // Initial update of user information on page load
+            updateUserInfoOnPage();
+        </script>
     </div>
 </body>
+
 </html>
