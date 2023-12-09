@@ -61,6 +61,20 @@ nav {
     margin-left: 25px;
 }
 
+/* Standard-Stile für größere Bildschirme */
+.navMenu {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Media Query für kleinere Bildschirme, z.B. Handys */
+@media only screen and (max-width: 600px) {
+    .navMenu .mobile-hide {
+        display: none; /* Verstecke die Links mit der Klasse mobile-hide */
+    }
+}
+
+
 .navMenu a {
     display: flex;
     align-items: center;
