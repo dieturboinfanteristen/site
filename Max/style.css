@@ -167,6 +167,7 @@ body {
     height: 220px;
     position: relative;
     margin: 10px 0 20px;
+    cursor: pointer;
 }
 
 .card-container {
@@ -282,10 +283,11 @@ body {
   }
   
 
-.img-profile {
-    width: 70px;
-    height: 70px;
+  .img-profile {
+    max-width: 35%;
+    max-height: 35%;
     margin-left: 60%;
+    margin-top: -10%;
 }
   
 ul.menu {
