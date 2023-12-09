@@ -15,13 +15,10 @@
         <ul class="nav-links">
             
             <i class="fa fa-home" style="color: #fff; margin-right: -16px; margin-left: 25px;"></i>
-            <li class="nav-items"><a href="#">Home</a></li>
+            <li class="nav-items"><a href="/site/">Home</a></li>
 
             <i class="fa fa-film" style="color: #fff; margin-right: -16px; margin-left: 25px;"></i>
             <li class="nav-items"><a href="#">Filme</a></li>
-
-            <i class="fa fa-plus" style="color: #fff; margin-right: -16px; margin-left: 25px;"></i>
-            <li class="nav-items"><a href="#">Watchlist</a></li>
 
         </ul>
 
@@ -30,10 +27,13 @@
                 <li>
                     <img src="images/profile1.png" onclick="toggleSubMenu()" class="img-profile">
                     <ul class="submenu" id="submenu">
-                        <li>Full Stack JavaScript</li>
-                        <li>Python Development</li>
-                        <li>Data Analysis</li>
-                        <li onclick="redirectToNewAccount()">Konto Wechseln</li>
+                        <li onclick="editProfile()">
+                            <i class="fas fa-user-edit"></i> Profil Bearbeiten
+                          </li>
+                        <li onclick="redirectToNewAccount()">
+                            <i class="fas fa-exchange-alt"></i> Konto Wechseln
+                          </li>
+                          
                     </ul>
                 </li>
             </ul>
@@ -41,6 +41,9 @@
 
         <script>
             function redirectToNewAccount() {
+                window.location.href = "/site/";
+            }
+            function editProfile() {
                 window.location.href = "/site/";
             }
         </script>
@@ -93,7 +96,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -101,7 +103,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -109,7 +110,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -117,7 +117,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -125,7 +124,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -133,7 +131,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -141,7 +138,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -149,7 +145,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -157,7 +152,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -165,7 +159,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -173,7 +166,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -181,7 +173,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -189,7 +180,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -197,7 +187,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -205,7 +194,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -213,7 +201,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -221,7 +208,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
         </div>
@@ -237,7 +223,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -245,7 +230,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -253,7 +237,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -261,7 +244,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -269,7 +251,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -277,7 +258,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -285,7 +265,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -293,7 +272,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -301,7 +279,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -309,7 +286,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -317,7 +293,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -325,7 +300,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -333,7 +307,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -341,7 +314,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -349,7 +321,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -357,7 +328,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -365,7 +335,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
         </div>
@@ -381,7 +350,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -389,7 +357,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -397,7 +364,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -405,7 +371,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -413,7 +378,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -421,7 +385,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -429,7 +392,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -437,7 +399,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -445,7 +406,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -453,7 +413,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -461,7 +420,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -469,7 +427,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
             <div class="card">
@@ -477,7 +434,6 @@
                 <div class="card-body">
                     <h2 class="name">movie name</h2>
                     <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
-                    <button class="watchlist-btn">add to watchlist</button>
                 </div>
             </div>
         </div>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchlist</title>
+</head>
+<body>
+
+<button class="watchlist-btn" onclick="addToWatchlist()">add to watchlist</button>
+
+<script>
+    function addToWatchlist() {
+        // Hier fügst du den Code hinzu, um das Element zur Watchlist hinzuzufügen
+        let item = 'Item to add'; // Ersetze dies mit den Daten des hinzuzufügenden Elements
+        addToLocalStorage(item);
+        alert('Zum Watchlist hinzugefügt!');
+    }
+
+    function addToLocalStorage(item) {
+        let watchlist = JSON.parse(localStorage.getItem('watchlist')) || [];
+        watchlist.push(item);
+        localStorage.setItem('watchlist', JSON.stringify(watchlist));
+    }
+</script>
+
+</body>
+</html>
