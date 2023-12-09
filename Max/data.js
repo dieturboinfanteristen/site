@@ -2,17 +2,17 @@ let movies = [
     {
         name:'loki',
         des:'The mercurial villain Loki resumes his role as the God of Mischief in a new series that takes place after the events of “Avengers: Endgame.”',
-        image:'images/slider 1.PNG'
+        image:'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/ACE773BDC4F7EB75139F3F00C0CB1B2590AF7E064AF9DE0C2F1F7DDD8C3EC01A/scale?width=1200&aspectRatio=1.78&format=jpeg'
     },
     {
         name:'Black Widow',
         des:'Natasha Romanoff confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises.',
-        image:'images/slider 2.PNG'
+        image:'https://championstream.de/wp-content/uploads/2021/09/Black-Widow-bei-Disney-Plus.jpg'
     },
     {
         name:'Cruella',
         des:'The film is about the rebellious early days of cinema most notorious and fashionable villains, the legendary Cruella de Vil.',
-        image:'images/slider 3.PNG'
+        image:'https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/8628/1048628-h-e57ea9013129'
     },
     {
         name:'What If...?',
