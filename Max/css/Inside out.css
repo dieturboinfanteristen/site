@@ -64,12 +64,17 @@ nav {
 
 @media only screen and (max-width: 600px) {
 
-    detailImgTitle img {
+    .detailBgImg img {
+        width: 100%;
+        height: auto;
+    }
 
+    .detailImgTitle img {
+        max-width: 100%;
     }
 
     .controls button {
-        margin-top: 40%;
+        margin-top: 70%;
 
     }
 
