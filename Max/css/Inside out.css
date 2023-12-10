@@ -70,15 +70,21 @@ nav {
     }
 
     .detailImgTitle {
-        margin-top: 300px;
+        top: 40%;
+        margin-right: 0%;
     }
 
     .controls button {
-        margin-top: 100%;
+        margin-top: 90%;
     }
 
     .navMenu .mobile-hide {
         display: none;
+    }
+
+    .videoModalvideo {
+        width: 460px;
+        height: 215px;
     }
 }
 
