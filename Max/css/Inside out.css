@@ -63,14 +63,23 @@ nav {
 
 
 @media only screen and (max-width: 600px) {
+
+    detailImgTitle img {
+
+    }
+
+    .controls button {
+        margin-top: 40%;
+
+    }
+
     .navMenu .mobile-hide {
         display: none;
     }
-
-    .controls {
-        margin: 280px 0; /* Ändere hier den Abstand nach Bedarf */
-    }
 }
+
+
+
 
 .navMenu a {
     display: flex;
