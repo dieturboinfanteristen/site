@@ -99,10 +99,17 @@ const getData = () => {
 }
 
 
-function openModal() {
-    document.getElementById('videoModal').style.display = 'block';
+function closeVideoModal() {
+    var modal = document.getElementById('videoModal');
+    modal.style.display = 'none';
+    // Stop video playback when closing the modal
+    var videoIframe = document.getElementById('videoIframe');
+    videoIframe.src = '';
 }
 
-function closeModal() {
-    document.getElementById('videoModal').style.display = 'none';
+function openVideoModal(videoUrl) {
+    var videoModal = document.getElementById('videoModal');
+    var videoIframe = document.getElementById('videoIframe');
+    videoIframe.src = videoUrl;
+    videoModal.style.display = 'block';
 }
