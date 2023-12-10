@@ -4,6 +4,7 @@ html {
 
 * {
     box-sizing: border-box;
+    user-select: none;
 }
 
 body {
@@ -78,7 +79,7 @@ nav {
     top: 350px; 
     width: 150px;
     height: 100px;
-    
+
     object-fit: cover;
   }
 
