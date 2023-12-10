@@ -64,32 +64,45 @@ nav {
 
 @media only screen and (max-width: 600px) {
 
+  .detailBgImg img {
+    object-fit:cover;
+    display: flex;
+  }
+
+  .detailImgTitle {
+    position: relative;
+  }
+  
+  .detailImgTitle img {
+    position: absolute;
+    top: 350px; 
+    width: 150px;
+    height: 100px;
+    
+    object-fit: cover;
+  }
+
     #videoModal {
-        width: 90%; /* 90% der Bildschirmbreite */
-        margin: 5% auto; /* Zentriert das Modal */
+        width: 90%;
+        margin: 5% auto;
     }
 
     .modal-content {
-        width: 100%; /* Volle Breite für den Modal-Inhalt */
+        width: 100%;
     }
 
     iframe {
-        width: 100%; /* 100% Breite für das eingebettete Video */
-        height: 200px; /* Eine feste Höhe für das Video, kann nach Bedarf angepasst werden */
+        width: 100%;
+        height: 200px;
     }
 
     .close {
-        font-size: 20px; /* Ändert die Schriftgröße des Schließen-Symbols */
+        font-size: 20px;
     }
 
     .detailBgImg img {
         width: 100%;
         height: auto;
-    }
-
-    .detailImgTitle {
-        top: 40%;
-        margin-right: 0%;
     }
 
     .controls button {
@@ -400,13 +413,6 @@ nav {
         width: 25px;
     }
 
-    .subTitle {
-        font-size: 12px;
-    }
-    
-    .description {
-        font-size: 14px;
-    }
 }
 
 @media only screen and (max-width: 479px) {
@@ -431,11 +437,4 @@ nav {
         width: 25px;
     }
 
-    .subTitle {
-        font-size: 12px;
-    }
-    
-    .description {
-        font-size: 14px;
-    }
 }
