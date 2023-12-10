@@ -70,12 +70,12 @@ nav {
     }
 
     .detailImgTitle img {
+        margin-top: 70%;
         max-width: 100%;
     }
 
     .controls button {
         margin-top: 70%;
-
     }
 
     .navMenu .mobile-hide {
