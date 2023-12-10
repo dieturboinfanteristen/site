@@ -65,17 +65,16 @@ nav {
 @media only screen and (max-width: 600px) {
 
     .detailBgImg img {
-        width: 100%;
-        height: auto;
+        width: 10px;
+        height: 50%;
     }
 
-    .detailImgTitle img {
-        margin-top: 70%;
-        max-width: 100%;
+    .detalImgTitle {
+        margin-top: 80%;
     }
 
     .controls button {
-        margin-top: 70%;
+        margin-top: 90%;
     }
 
     .navMenu .mobile-hide {
