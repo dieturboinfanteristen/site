@@ -97,12 +97,3 @@ const getData = () => {
     let movieData = JSON.parse(localStorage.getItem('movieData'));
     return movieData;
 }
-
-
-function openModal() {
-    document.getElementById('videoModal').style.display = 'block';
-}
-
-function closeModal() {
-    document.getElementById('videoModal').style.display = 'none';
-}
