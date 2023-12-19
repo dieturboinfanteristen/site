@@ -52,7 +52,7 @@
             </div>
             <div class="carousel-cell">
                 <a>
-                    <img src="assets/images/slider-badag.jpg" alt="slider-badging" />
+                    <img src="assets/images/slider-badag.jpg" alt="slider-badging"/>
                 </a>
             </div>
             <div class="carousel-cell">
@@ -84,7 +84,7 @@
                 </video>
             </div>
     
-            <div class="viewerWrap">
+            <div class="viewerWrap" onclick="redirectTo('star-wars/')">
                 <img src="assets/images/viewers-starwars.png" alt='' />
                 <video autoPlay={true} loop={true} playsInline={true} muted={true}>
                     <source src="assets/videos/1608229455-star-wars.mp4" type="video/mp4" />
@@ -101,6 +101,12 @@
                 </video>
             </div>
         </div>
+
+        <script>
+            function redirectTo(url) {
+                window.location.href = url;
+            }
+        </script>
 
         <div class="recommends">
             <h4>New to Disney+</h4>
